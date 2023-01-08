@@ -1,0 +1,1 @@
+.\CustomLexiconValidation.exe -CustomLexiconFilePath ..\C4T_Core\lexicon.xml -LogFile "log1.txt"

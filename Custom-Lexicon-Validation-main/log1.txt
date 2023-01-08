@@ -1,0 +1,1 @@
+Custom lexicon file format is correct. Please use it through SSML.

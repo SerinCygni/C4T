@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lexicon version="1.0"
+      xmlns="http://www.w3.org/2005/01/pronunciation-lexicon"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.w3.org/2005/01/pronunciation-lexicon
+        http://www.w3.org/TR/2007/CR-pronunciation-lexicon-20071212/pls.xsd"
+      alphabet="sapi" xml:lang="en-US">
+      <lexeme>
+        <grapheme> Serin </grapheme>
+        <phoneme> s eh r ih n </phoneme>
+      </lexeme>
+      <lexeme>
+        <grapheme> serin </grapheme>
+        <phoneme> s eh r ih n </phoneme>
+      </lexeme>
+      <lexeme>
+        <grapheme> Serin's </grapheme>
+        <phoneme> s eh r ih n s </phoneme>
+      </lexeme>
+      <lexeme>
+        <grapheme> serin's </grapheme>
+        <phoneme> s eh r ih n s </phoneme>
+      </lexeme>
+      <lexeme>
+        <grapheme> nya </grapheme>
+        <phoneme> n y aa </phoneme>
+      </lexeme>
+	  <lexeme>
+		<grapheme>CuteNysNys</grapheme>
+		<phoneme>n ih s s ah</phoneme>
+	  </lexeme>
+</lexicon>

@@ -1,0 +1,42 @@
+﻿@page "/"
+
+@using C4T_Core;
+@using C4T_Core.Helpers;
+@inject C4T cat;
+
+<h1>Hello C4T!</h1>
+
+<label for="chatChannel">Twitch Channel</label> <input type="text" id="chatChannel" @bind="options.ChatChannel"/>
+<br />
+<label for="chatChannel">Twitch Client ID</label> <input type="text" id="chatChannel" @bind="options.ClientId" />
+<br />
+<label for="chatChannel">Twitch Client Secret</label> <input type="text" id="chatChannel" @bind="options.ClientSecret" />
+<br />
+<label for="chatChannel">Azure Speech Key</label> <input type="text" id="chatChannel" @bind="options.SpeechKey" />
+<br />
+<label for="useTextToSpeech">Use Text To Speech</label> <input type="checkbox" id="useTextToSpeech" @bind="options.UseTextToSpeech" /> 
+<br />
+<label for="followReact">React to new Follows</label> <input type="checkbox" id="followReact" @bind="options.FollowReact" /> 
+<br />
+<label for="raidReact">React to Raids</label> <input type="checkbox" id="raidReact" @bind="options.RaidReact" /> 
+<br />
+<label for="dailyMessageReact">React to first message of the day from a user</label> <input type="checkbox" id="dailyMessageReact" @bind="options.DailyMessageReact" />
+<br />
+<br />
+<button @onclick="Initialize" disabled="@cat.Initialized">Initialize</button>
+
+@code {
+    C4TOptions options = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        options = C4T.LoadOptions(FileSystem.AppDataDirectory);
+    }
+
+    private async Task Initialize()
+    {
+        await cat.SaveOptions(options);
+        await cat.Initialize(options);
+    }
+
+}
